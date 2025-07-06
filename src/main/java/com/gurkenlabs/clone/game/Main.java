@@ -3,6 +3,7 @@ package com.gurkenlabs.clone.game;
 import com.gurkenlabs.clone.game.logic.GurkNukemLogic;
 import com.gurkenlabs.clone.game.logic.PlayerInputLogic;
 import com.gurkenlabs.clone.game.screens.InGameScreen;
+import com.gurkenlabs.clone.game.screens.TitleScreen;
 import de.gurkenlabs.litiengine.*;
 import de.gurkenlabs.litiengine.configuration.DisplayMode;
 import de.gurkenlabs.litiengine.resources.Resources;
@@ -40,6 +41,7 @@ public class Main {
         PlayerInputLogic.init();
         GurkNukemLogic.init();
 
+        Game.screens().add(new TitleScreen());
         Game.screens().add(new InGameScreen());
 
         // load the first level (resources for the map were implicitly loaded from the game file)
