@@ -59,12 +59,14 @@ public class Player extends Creature implements IUpdateable {
      */
     @Action(description = "This performs the jump ability for the player's entity.")
     public void jump() {
-        if (this.consecutiveJumps >= MAX_ADDITIONAL_JUMPS && !this.jump.isOnCooldown()) {
+        if (this.consecutiveJumps >= MAX_ADDITIONAL_JUMPS || this.jump.isOnCooldown()) {
             return;
         }
 
-        this.jump.cast();
-        this.consecutiveJumps++;
+        if (this.jump.canCast() && this.isTouchingGround()) {
+            this.jump.cast();
+            this.consecutiveJumps++;
+        }
     }
 
     private boolean isTouchingGround() {
