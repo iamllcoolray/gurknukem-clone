@@ -17,6 +17,7 @@ import java.util.Optional;
 public class JumpEffect extends ForceEffect {
     protected JumpEffect(ICombatEntity executor, int strength, int duration) {
         super(TargetingStrategy.executingEntity(), executor, strength);
+        setDuration(duration);
     }
 
     @Override protected Force createForce(IMobileEntity affectedEntity) {
