@@ -23,7 +23,7 @@ public class Main {
         Game.info().setWebsite("link to game");
         Game.info().setDescription("A 2D Game made in the LITIENGINE");
 
-        // set game window to fullscreen
+        // set game window to fullscreenu
         Game.config().graphics().setDisplayMode(DisplayMode.FULLSCREEN);
 
         // init the game infrastructure
@@ -35,8 +35,6 @@ public class Main {
 
         // load data from the utiLITI game file
         Resources.load("game.litidata");
-
-        Game.config().debug().setDebugEnabled(true);
 
         PlayerInputLogic.init();
         GurkNukemLogic.init();
