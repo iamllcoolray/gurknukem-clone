@@ -1,6 +1,7 @@
 package com.gurkenlabs.clone.game.entities;
 
 import com.gurkenlabs.clone.game.abilities.Jump;
+import com.gurkenlabs.clone.game.logic.GurkNukemLogic;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
@@ -77,7 +78,7 @@ public class Player extends Creature implements IUpdateable {
 
         // b) it collides with the map's boundaries
         if (groundCheck.getMaxY() > Game.physics().getBounds().getMaxY()) {
-            Game.world().environment().getSpawnpoint("enter").spawn(this);
+            GurkNukemLogic.respawn("enter");
             return true;
         }
 

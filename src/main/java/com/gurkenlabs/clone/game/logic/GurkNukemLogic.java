@@ -30,7 +30,7 @@ public final class GurkNukemLogic {
         });
     }
 
-    public static void respawn(){
-        Game.world().environment().getSpawnpoint("enter").spawn(Player.instance());
+    public static void respawn(String spawnPoint){
+        Game.world().environment().getSpawnpoint(spawnPoint).spawn(Player.instance());
     }
 }
