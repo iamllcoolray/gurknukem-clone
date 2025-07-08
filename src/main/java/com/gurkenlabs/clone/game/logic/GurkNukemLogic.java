@@ -29,4 +29,8 @@ public final class GurkNukemLogic {
             }
         });
     }
+
+    public static void respawn(){
+        Game.world().environment().getSpawnpoint("enter").spawn(Player.instance());
+    }
 }

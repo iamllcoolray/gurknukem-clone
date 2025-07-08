@@ -23,7 +23,7 @@ public class Main {
         Game.info().setWebsite("link to game");
         Game.info().setDescription("A 2D Game made in the LITIENGINE");
 
-        // set game window to fullscreenu
+        // set game window to fullscreen
         Game.config().graphics().setDisplayMode(DisplayMode.FULLSCREEN);
 
         // init the game infrastructure
