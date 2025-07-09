@@ -1,8 +1,11 @@
 package com.gurkenlabs.clone.game.logic;
 
+import com.gurkenlabs.clone.game.entities.Dean;
+import com.gurkenlabs.clone.game.entities.Jorge;
 import com.gurkenlabs.clone.game.entities.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
+import de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.graphics.LocationLockCamera;
 import de.gurkenlabs.litiengine.resources.Resources;
@@ -28,6 +31,9 @@ public final class GurkNukemLogic {
                 enter.spawn(Player.instance());
             }
         });
+
+        CreatureMapObjectLoader.registerCustomCreatureType(Jorge.class);
+        CreatureMapObjectLoader.registerCustomCreatureType(Dean.class);
     }
 
     public static void respawn(String spawnPoint){

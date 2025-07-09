@@ -357,6 +357,33 @@
       <property name="renderType" value="NORMAL"/>
      </properties>
     </object>
+    <object id="17" type="CREATURE" x="192" y="232" width="16" height="16">
+     <properties>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxWidth" value="8.0"/>
+      <property name="renderType" value="NORMAL"/>
+      <property name="spawnDirection" value="LEFT"/>
+      <property name="spritesheetName" value="Dean"/>
+      <property name="turnOnMove" type="bool" value="false"/>
+     </properties>
+    </object>
+    <object id="18" type="CREATURE" x="376" y="288" width="16" height="16">
+     <properties>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxWidth" value="8.0"/>
+      <property name="renderType" value="NORMAL"/>
+      <property name="scaling" type="bool" value="false"/>
+      <property name="spawnDirection" value="LEFT"/>
+      <property name="spritesheetName" value="Jorge"/>
+      <property name="turnOnMove" type="bool" value="false"/>
+     </properties>
+    </object>
    </objectgroup>
    <objectgroup id="0" name="Spawnpoints" visible="1">
     <object id="1" name="enter" type="SPAWNPOINT" x="8" y="312" width="16" height="16">
@@ -373,6 +400,18 @@
   </map>
  </maps>
  <spriteSheets>
+  <sprite width="16" height="18" imageformat="PNG" name="Dean-idle-left">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAAwklEQVR4Xu2UwQ0CMQwE/aQEnhRBLdTAkzIoixIogTL4HXKkhNzc2Ynl7620Ogl2RgkgRI4YOZ0vy165s0IuxBNiuWe4Z7lfhWOr5Gq4s0quRd98vh7L9X5bdVaQ5YtAAUrq6yNBlnc/ws/3PRSQifIldbzXISx5vsSSWALelu2/CrIlBFhPwG2tHrj/HVh8XiB/R2Xo0np8XiDbi8weviUtQOiI8psDRQVko3y7Qf/kxkuWLwL9R+uf3HjJ8ukbzPA/ow+ufPZb/ZgAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="16" height="18" imageformat="PNG" name="Dean-move-left">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAEAAAAASCAYAAADrL9giAAABFklEQVR4Xu2Wuw0CMRBEHVICIUVQCzUQUgZlUQIlUAYZaC3tyfewfd4bkpPuSZPAvEFaPiKlnZ0qh+PpUwt7NehEXIdudINeyKfEsF/CLsN+DToM+4R9hv0ZLLdCz2CnFXol7LZCz2GvFXoT9uT9cfucr5dZRgYU11E3VD8PmMARf7w3oLiOuqH63Y/Q6/3sDrAfcR160Q06UT/j5VqWZMV11A3Vz7RGRgYU11E3wr490Uv5XaJrsM8s+QYdZmmDfabps+ixi5U/JFX5D75BN7pBL+pPAy5wyNKUk+4b6obq/1xx6HIFqm+oG6o/g2MhOW3fzwN+tfD10vb9jEn2r2qN7K7qr92hH3EnlOup70DprdkYef0v541xd7nDmwAAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="16" height="18" imageformat="PNG" name="Jorge-idle-left">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAA0UlEQVR4Xs1SwQ3CMBDLkxF4MgSzMANPxmAsRmAExuAHukgXWe4ld8cJqZZObVrbsdu0tkccjqePNcz7C2Sj8/ViTjQEB08VEOLr/dxMNES5ABrgxvfHrY9nUi0wNcgEqBToBkLEjfHeM6gWmBpkAnDojN48RBjCM6gW6EATDBARVwsMqJH+u3D69mMBfqn/kod5yrWecYGZvkNeeCMGYsomzLNmpt0Y6KfCtaa3DJjL65XWBZrpMGcF1mb14xzglTkrVPXjIOGVOStU9eUGEf0XOYQww1zWMFsAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="16" height="18" imageformat="PNG" name="Jorge-move-left">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAEAAAAASCAYAAADrL9giAAABL0lEQVR4Xu2TwQ3CMAxFe2QEjgzBLMzAkTEYixEYgTG4gRzhyv21E7tOi5D4kiXS+v3Gn2QY/pprtz+8tMI+S8hF+a+KNno8n9TyDJHlSRhcNEDkQjw1Pp73WXmH6MFjcF6WlOUnBnLj19ulVMukB4/hRQNENsKbBtkBInw2wAxfDKhRblz+bhn04DG8aIDIRnjTIDtAhMfQtuQnR0geJa6WQQ9e9svyDJDli6SJHMAFDzm+R4AZfhQb8d1xp/dRhs8ESFrE40tay823hsDnPXgtQOzjXu0Z8rXvF6BVZECmmgn2arUWj31aWezMgI+KXHN6lgH243pNHntxXWOrkkaysM8SclGehOzWfDHge1O9P4Z+nS8iKHx8PmI2yy/1QT7Cjsqkl/0HJLfEw/P9N7zsXVYfXK2IAAAAAElFTkSuQmCC</image>
+  </sprite>
   <sprite width="3" height="2" imageformat="PNG" name="bullet">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGklEQVR4XmPgkFD4b5IR9v/Bjwv/GUAcmAAAjxcLRydEja0AAAAASUVORK5CYII=</image>
   </sprite>
