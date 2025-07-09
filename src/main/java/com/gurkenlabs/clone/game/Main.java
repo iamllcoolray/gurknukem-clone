@@ -37,10 +37,11 @@ public class Main {
         Resources.load("game.litidata");
 
         PlayerInputLogic.init();
-        GurkNukemLogic.init();
 
         Game.screens().add(new TitleScreen());
         Game.screens().add(new InGameScreen());
+
+        GurkNukemLogic.init();
 
         // load the first level (resources for the map were implicitly loaded from the game file)
         Game.world().loadEnvironment("level1");

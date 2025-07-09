@@ -35,7 +35,5 @@ public class EnemyController implements IBehaviorController {
 
         this.getEntity().setAngle(this.direction.toAngle());
         Game.physics().move(this.enemy, this.enemy.getTickVelocity());
-
-        System.out.println(direction.toString());
     }
 }
