@@ -10,16 +10,15 @@ import de.gurkenlabs.litiengine.entities.behavior.IBehaviorController;
 
 public class EnemyController implements IBehaviorController {
     private final Creature enemy;
-    private long directionChanged, nextDirectionChange;
-    private Direction direction;
     private final EntityNavigator navigator;
-    private int distanceFromTarget, rangeOfVision;
+    private int distanceFromTarget;
+    private final int rangeOfVision;
     private boolean canSeeTarget;
 
     public EnemyController(Creature enemy) {
         this.enemy = enemy;
         this.distanceFromTarget = 0;
-        rangeOfVision = 100;
+        this.rangeOfVision = 100;
         this.canSeeTarget = false;
         this.navigator = new EntityNavigator(this.enemy, new AStarPathFinder(Game.world().environment().getMap()));
     }
@@ -30,7 +29,19 @@ public class EnemyController implements IBehaviorController {
     }
 
     private void chaseTarget(){
-        navigator.navigate(Player.instance().getCenter());
+        this.navigator.navigate(Player.instance().getCenter());
+    }
+
+    private void turnToTarget(){
+        Direction direction;
+
+        if(Player.instance().getLocation().getX() < this.getEntity().getLocation().getX()){
+            direction = Direction.LEFT;
+        }else {
+            direction = Direction.RIGHT;
+        }
+
+        this.getEntity().setAngle(direction.toAngle());
     }
 
     @Override
@@ -39,13 +50,12 @@ public class EnemyController implements IBehaviorController {
             return;
         }
 
-        distanceFromTarget = (int) this.getEntity().getCenter().distance(Player.instance().getCenter());
-        canSeeTarget = distanceFromTarget <= rangeOfVision;
+        this.distanceFromTarget = (int) this.getEntity().getCenter().distance(Player.instance().getCenter());
+        this.canSeeTarget = this.distanceFromTarget <= this.rangeOfVision;
 
-        if(canSeeTarget){
-            chaseTarget();
+        if(this.canSeeTarget){
+            this.turnToTarget();
+            this.chaseTarget();
         }
-
-
     }
 }
