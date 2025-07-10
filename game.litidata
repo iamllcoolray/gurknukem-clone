@@ -357,12 +357,13 @@
       <property name="renderType" value="NORMAL"/>
      </properties>
     </object>
-    <object id="17" type="CREATURE" x="192" y="232" width="16" height="16">
+    <object id="17" type="CREATURE" x="192" y="232" width="16" height="18">
      <properties>
       <property name="collision" type="bool" value="true"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionValign" value="MIDDLE_DOWN"/>
+      <property name="collisionboxHeight" value="16.0"/>
       <property name="collisionboxWidth" value="8.0"/>
       <property name="renderType" value="NORMAL"/>
       <property name="spawnDirection" value="LEFT"/>
@@ -370,12 +371,13 @@
       <property name="turnOnMove" type="bool" value="false"/>
      </properties>
     </object>
-    <object id="18" type="CREATURE" x="376" y="288" width="16" height="16">
+    <object id="18" type="CREATURE" x="320" y="256" width="16" height="18">
      <properties>
       <property name="collision" type="bool" value="true"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionValign" value="MIDDLE_DOWN"/>
+      <property name="collisionboxHeight" value="16.0"/>
       <property name="collisionboxWidth" value="8.0"/>
       <property name="renderType" value="NORMAL"/>
       <property name="scaling" type="bool" value="false"/>
