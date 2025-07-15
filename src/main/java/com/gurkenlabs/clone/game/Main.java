@@ -20,7 +20,7 @@ public class Main {
         Game.info().setName("GurkNukemClone");
         Game.info().setSubTitle("");
         Game.info().setVersion("v0.0.1");
-        Game.info().setWebsite("link to game");
+        Game.info().setWebsite("https://github.com/iamllcoolray/gurknukem-clone");
         Game.info().setDescription("A 2D Game made in the LITIENGINE");
 
         // set game window to fullscreen

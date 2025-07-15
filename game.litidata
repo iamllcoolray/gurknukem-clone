@@ -420,7 +420,7 @@
   <sprite width="191" height="49" imageformat="PNG" name="grey_button06">
    <image>iVBORw0KGgoAAAANSUhEUgAAAL8AAAAxCAYAAACLUHiuAAACQUlEQVR4Xu3dzW3iUBSG4XQwJaSUlJQSUkJKSAkpYXYIFkhZIDYsRmKBhIQYFghLGOz4uzPHMt9MA/Z5X+ksYl+8evyT1X16GlRV1fP9fn9tmuazm5+almiEhV9ZlmnZHlp/qFvw5hcgmlIy7u4F/z0WnE6ndrPZtKvVqsxsNmOY0U34lWWZHtwA7z38uq5f4oQW+kUYZgoj25HMx1P/Qwf2+32/cL1et9vttszhcGCY0U34leVwLeNK5gv+2+32Swe+vr76O8QvxDBjnviikXEl8wX/nxdBW07O5/Oy+Hw+t9frtQzRGAu/sizT8fSP/sGvuVwu/QKiKSTTjv94PP54wL9YLPqTRFPK8f/3yU80xdw3+ClN7hv8lCb3DX5Kk/sGP6XJfYOf0uS+wU9pct/gpzS5b/BTmtw3+ClN7hv8lCb3DX5Kk/sGP6XJfYOf0uS+wU9pct/gpzS5b/BTmtw3+ClN7hv8lCb3DX5Kk/sGP6XJfYOf0uS+wU9pct/gpzS5b/BTmtw3+ClN7hv8lCb3DX5Kk/sGP6XJfYOf0uS+wU9pct/gpzS5b/BTmtz3A37tyqKTVVX1C4imkEzL9nK5LH83TfO74NcW7ToQO9Zp+0aiKSXTsh178cp8wR+7r2uX6ng17Ha7hx8TjbG6rovlcB07sXfmXwv+7pXwHIvZgZ2Z6gx3YJf5gv/v0/8tTuhO0beR/5hhxjiyPPySkfUe/uAGKJ8/RFOtM/7h7vu6b6SX7p+BT/8R0ZiTadl27997CNm9TdQibwAAAABJRU5ErkJggg==</image>
   </sprite>
-  <sprite width="18" height="18" imageformat="PNG" name="gurknukem-idle-left">
+  <sprite width="18" height="18" imageformat="PNG" name="gurknukem-idle">
    <image>iVBORw0KGgoAAAANSUhEUgAAACQAAAASCAYAAAAzI3woAAAA3ElEQVR4XuWTwQ3CMAxFc2QEjgzBLMzAkTEYixEYgTG4FTnEkflxEqf6N770FSX1f63dNqV/0uF42mbGjCsMecaMJ6m7P27b+XrpriEWCyQ1XtauEQ4PlL6s1/vZeKWxLAYIXzM63BgG0VGQzUgzuI82RgHJdanzrNNWJmZ/tAKawbSBnmXSzbQ96C5Qydm9nmn9yDVrux3ZTqqBmJtHPGR5RXpmp+G590AMVgVqELsShyBFNNYsZI1ZFJOVhaFlQBFm93KyJKTfgq5YExGLU39bu2JNRCwOrbMo5wMlU4FVNEFp+QAAAABJRU5ErkJggg==</image>
   </sprite>
   <sprite width="1376" height="352" imageformat="PNG" name="gurknukem-logo">
